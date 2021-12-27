@@ -1,17 +1,47 @@
-code {
-  background: #000000;
-  color: #FFFFFF;
-  display: block;
-  padding: 25px;
-  text-align: center;
+/*위치에 따른 버튼*/
+l {
+  display: inline-block;
+  padding: 12px;
+  float: ;
 }
-header,
-section,
-aside,
-footer {
-  margin: 10px;
+c {
+  display: inline-block;
+  padding: 12px;
+  float: center;
 }
-footer {
-  margin-bottom: 0;
+r {
+  display: inline-block;
+  padding: 12px;
+  float: right;
 }
 
+/*로그인 박스*/
+login {
+  display: inline-block;
+  padding: 12px;
+  float: right;
+  background: #1a73e8;
+  color: white;
+  border-radius: 5px;
+}
+
+/*구글 이미지 가운데 정렬*/
+section {
+  text-align : center;
+  padding: 12px;
+}
+
+/*검색창 부분*/
+aside {
+  text-align : center;
+  padding: 12px;
+}
+
+/*하단 고정, 배경 꽉차게*/
+footer {
+  position: absolute;
+  bottom:0;
+  width:100%;
+  background: #dadce0;
+  color: #70757a;
+}
