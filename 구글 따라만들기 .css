@@ -1,1 +1,17 @@
+code {
+  background: #000000;
+  color: #FFFFFF;
+  display: block;
+  padding: 25px;
+  text-align: center;
+}
+header,
+section,
+aside,
+footer {
+  margin: 10px;
+}
+footer {
+  margin-bottom: 0;
+}
 
