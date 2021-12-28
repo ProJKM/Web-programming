@@ -1,0 +1,122 @@
+Machine Language (001011110) : Machine Language는 컴퓨터가 이해할 수 있는 유일한 언어입니다.
+Assembly Language (Low-level Language) :  Machine Language의 내용들을 사람이 읽고 이해할 수 있는 방식으로 거의 동일하게 작업할 수 있습니다.
+High-level Language : Interpreted Language는 편지를 가져가서 한 문장, 한 문장 읽으면서 동시에 번역하는 상황과 유사합니다. 
+                            Compiled Language는 사전에 번역해놓은 편지를 친구에게 전달해주는 것과 유사합니다.
+Command Line Interface(CLI) : 사용자들은 터미널이나 콘솔창을 통해 명령어를 입력하게 됩니다.
+Graphical User Interface(GUI) : GUI는 사용자가 창이나 스크롤, 버튼, 이미지, 아이콘 등을 이용하여 시스템을 조종할 수 있도록 도와줍니다.
+
+한 줄로 코멘트를 작성할 때는 //를 이용할 수 있습니다.
+/*와 */를 이용하여 코멘트를 여러 줄 작성할 수도 있습니다.
+
+
+
+JavaScript
+
+variables : 자바스크립트에서 변수를 선언하는 방법에는 세 가지(var, let, const)가 있습니다.
+
+Identifiers : 변수를 선언할때 지어주는 이름을 Identifier라고 부릅니다. 숫자, Reserved Words로 시작할 수는 없다.
+
+Boolean : Boolean에는 true 혹은 false 단 두 가지의 값만 존재합니다. 
+
+undefined : undefined라는 단어의 의미는 말 그대로, "정의되지 않음"이라는 뜻입니다.
+
+null : null이라는 값은 undefined와는 다르게 의도적으로 값이 없음을 표현
+
+Numbers : 숫자
+
+String : 문자열
+
+'6'.repeat(3) 반복 666
+'hi ken'.includes(' ke') 포함여부 true                      
+'what are you doing?'.startsWith('what ') what으로 시작여부 true
+'I am doing FiNe'.endsWith('iNe') iNe으로 종결여부 true
+'Are you sure?'.indexOf(' yo') yo문자열의 index 값 3
+'Yeah I am sure'.slice(2, 5) 2~5까지 출력 "ah " 
+'I?doubt?that'.split('?') ?기준으로 나눔 ["I","doubt","that"]
+'Why would you doubt my word?'.split('') 다나눔 ["W","h","y"," ","w","o","u","l","d"," ","y","o","u"," ","d","o","u","b","t"," ","m","y"," ","w","o","r","d","?"]
+'You hAve BeEn DiSHonest'.toLowerCase() 소문자로 "you have been dishonest"
+'No wAy!'.toUpperCase() 대문자로 "NO WAY!"
+
+Types : String, Number, Boolean, Undefined, Null, Object, Symbol 
+
+Logical NOT Operator : !를 이용해 표현합니다.
+
+Boolean([ 1, 2, 3 ]);         // true
+Boolean([]);                  // true
+Boolean({ name: 'hello' });   // true
+Boolean({});                  // true
+Boolean('abc');               // true
+Boolean('  ');                // false
+Boolean('   '.trim());        // false trim()공백제거
+Boolean(300);                 // true
+Boolean(-10);                 // true
+Boolean(function foo () {});  // true
+
+Logical OR Operator : ||로 표현합니다.
+
+true || true;                   // true
+true || false;                  // true
+false || true;                  // true
+false || false;                 // false
+"hello" || {};                  // "hello" 
+[] || "hello";                  // []
+(function foo () {}) || "hello";  // (function foo () {})
+false || "";                    // ""
+
+Logical AND Operator : &&로 표현합니다.
+
+true && true;                  // true
+true && false;                 // false
+false && true;                 // false
+false && false;                // false
+"hello" && {};                 // []
+[] && "hello";                 // "hello"
+"" && "hello";                 // ""
+(function foo () {}) && "hello"; // "hello"
+false && "";                   // false
+
+조건문 : if를 이용해 표현합니다.
+
+// #1. 무엇이 출력될까요?     1
+if (true) {                         true
+  console.log(1);                출력
+} else if (true) {
+  console.log(2);
+} else {
+  console.log(3);
+}
+
+// #2. 무엇이 출력될까요?     2
+if ("") {                            false
+  console.log(1);                통과
+} else if ("a") {                   true
+  console.log(2);                출력
+} else {
+  console.log(3);
+}
+
+// #3. 무엇이 출력될까요?     2
+if (null) {                          false
+  console.log(1);                통과
+} else if (5) {                     true
+  console.log(2);                출력
+} else {
+  console.log(3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
