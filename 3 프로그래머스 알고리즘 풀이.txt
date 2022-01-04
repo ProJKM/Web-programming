@@ -1,0 +1,31 @@
+프로그래머스 알고리즘 풀이
+
+김서방 찾기
+
+function solution(seoul) {
+    var x = seoul.indexOf("Kim")
+    var answer = "김서방은 "+x+"에 있다";
+    return answer;
+}
+
+가운데글자 가져오기
+
+function solution(s) {
+    var x = s.length, y=x/2
+    if (x%2===0)
+        {           
+           var answer = s[y-1]+s[y]
+}
+    else {
+        var answer = s[y-0.5]
+    }
+    return answer;
+}
+
+수박수박수박수
+
+function solution(n) {
+    var x = "수박".repeat(5000);
+    var answer = x.slice(0, n);
+    return answer;
+}
