@@ -7,6 +7,10 @@
 
 
 
+// VAR 가능
+// LET 재선언 불가, 재할당 가능
+// CONST 재선언, 재할당 불가
+
 // CLASS
 <span class="thick">I'm thick</span>
 
@@ -60,6 +64,46 @@ img[alt="Cat"] {
 Using Flex
 Using Inline Block
 Using Position Property
+
+
+
+//Scope란, 우리가 작성하는 코드의 접근 범위를 결정하는 개념입니다.
+
+//Scope 계층에서 가장 중요한 특징은 상위에서 하위 Scope 내부 정보를 접근 불가능, 하위에서 상위 Scope의 정보는 접근 가능
+
+//모든 변수 선언문은 스코프 내에서 최상위로 Hoisting 됩니다.
+
+// 함수선언식은 항상 최상위 호이스팅 
+
+function j () {
+  console.log('j');
+}
+
+
+
+아래 자료형들은 Primitive에 해당합니다. (단일정보)
+String
+Boolean
+Number
+Null
+Undefined
+Symbol
+
+Reference(참조) 방식으로 작동하는 자료형은 단 하나 뿐입니다.
+Object
+Array와 Function도 포함
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
