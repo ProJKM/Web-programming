@@ -32,3 +32,188 @@ j();     // j
 
 ////////////////////////////////////////////////////////////////////
 
+
+Quiz 1
+
+function foo () {
+  var a = 5;
+
+  for (var i = 0; i < a; i++) {
+    console.log(a);
+  }
+
+  console.log(i);  // 마지막 i값 5 출력
+}
+
+foo();
+
+
+Quiz 2
+
+var a = 1;
+
+function bar () {
+
+  function foo() {
+    console.log(a);  // 글로벌 a값 1 출력
+  }
+
+  foo();
+}
+
+bar();
+
+
+Quiz 3
+
+var a = 1;
+
+function bar () {
+
+  function foo() {
+    console.log(a);  // a = 2; 정의후 funcion foo 실행, 2 출력
+  }
+  
+  a = 2;
+
+  foo();
+}
+
+bar();
+
+
+Quiz 4
+
+function foo() {
+  var a = 1;
+
+  function bar () {
+    a = 2;
+  }
+
+  console.log(a); // function bar 실행전, 1출력
+  bar();
+}
+
+foo();
+
+
+Quiz 5
+
+var x = 1; 
+  
+function foo () { 
+    if (x > 1) { 
+        var x = 2; 
+    } 
+  
+    console.log(x);  // function 내부에 var x = 2; 가 있으므로 var x; 기 호이스팅, undefined 출력
+} 
+  
+foo(); 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+아래 자료형들은 Primitive에 해당합니다.
+String
+Boolean
+Number
+Null
+Undefined
+Symbol
+
+Reference(참조) 방식으로 작동하는 자료형은 단 하나 뿐입니다.
+Object
+Array와 Function도 포함
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+Quiz 1
+
+const person = {
+  age: 30
+};
+
+const something = person.age;
+
+person.age = 50;
+
+console.log(something); // person.age는 Primitive이므로 30
+
+
+Quiz 2
+
+let one = { name: "one" };
+const two = { name: "two" };
+
+const something = one;
+
+one = { name: "ONE" };
+
+console.log(something); // one 주솟값으로 선언하고 one 재할당 (바뀐 주소에 저장)이므로 one출력
+
+
+Quiz 3
+
+let one = 1;
+const two = 2;
+
+const something = one;
+
+one = 101;
+
+console.log(something); // one 주솟값으로 선언하고 one 재할당 (바뀐 주소에 저장)이므로 1출력
+
+
+Quiz 4
+
+let ken = {
+  name: "ken",
+  age: 30
+};
+
+const wan = {
+  name: "wan",
+  age: 35
+};
+
+const people = [ ken, wan ];
+
+ken = {
+  name: "KEN",
+  age: 38
+};
+
+console.log(people);  // kne, wan 주솟값으로 선언하고 ken 재할당 (바뀐 주소에 저장)이므로 1출력
+console.log(ken === people[0]);  // ken의 주솟값이 바꿔었으므로 false
+
+
+Quiz 5
+
+var secret = {
+  data: "I am secret"
+};
+
+function destroy (stuff) {
+  stuff = null;
+}
+
+destroy(secret);
+
+console.log(secret); // function으로 secret의 주솟값이 null로 변했을뿐 값은 그대로 유지 data: "I am secret" 출력
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
